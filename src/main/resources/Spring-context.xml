@@ -3,7 +3,9 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:component-scan base-package="ru"/>
     <bean class="ru.springcontext.quoter.RandomIntAnnotationBeanPostProcessor"/>
+    <bean class="ru.springcontext.quoter.ProfilingAnnotationBeanPostProcessor"/>
 
     <bean class="ru.springcontext.quoter.QuoterImplementation" id="quoterImplementation">
         <property name="quote" value="i`ll be back"></property>
